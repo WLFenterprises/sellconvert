@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 2em;
+        }
+        .product {
+            margin: 2em 0;
+            padding: 2em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product h2 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site Pessoal</h1>
+        <p>Conheça nossos produtos digitais de alta qualidade</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#desafio-maromba">Desafio Maromba 30 Dias</a>
+        <a href="#cha-de-sumico">O Poder de Chá de Sumiço</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Bem-vindo ao nosso site! Aqui você encontrará produtos digitais incríveis que irão transformar sua vida. Confira nossas ofertas abaixo.</p>
+        </section>
+        <section id="desafio-maromba" class="product">
+            <h2>Desafio Maromba 30 Dias</h2>
+            <p>Transforme seu corpo em 30 dias com o nosso programa de treino intensivo. Aumente sua massa muscular e alcance seus objetivos de fitness rapidamente.</p>
+            <a href="link-para-compra-do-produto">Compre Agora</a>
+        </section>
+        <section id="cha-de-sumico" class="product">
+            <h2>O Poder de Chá de Sumiço</h2>
+            <p>Descubra o poder do autoconhecimento e desenvolvimento pessoal com o nosso curso online. Melhore sua vida pessoal e profissional com técnicas comprovadas.</p>
+            <a href="link-para-compra-do-produto">Compre Agora</a>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+            <form action="processar-contato.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Meu Site Pessoal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
